@@ -1,0 +1,65 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+
+
+    .contact-title {
+        font-size: $font-size-xl;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $font-size-lg;
+        background: $primary;
+        box-shadow: $base-box-shadow;
+        border-radius: $base-border-radius;
+        font-size: $base-font-size;
+
+        .contact-input {
+            margin-bottom: 20px;
+            padding: 0.3rem 0.5rem;
+            border-radius: $base-border-radius;
+            width: 18rem;
+            outline: none;
+            border: none;
+            font-size: $base-font-size;
+
+            &:focus {
+                box-shadow: $base-box-shadow;
+
+            }
+        }
+
+        textarea {
+            height: 5rem;
+            resize: none;
+        }
+
+        & label {
+            margin-top: 20px;
+            margin-left: 10px;
+            align-self: flex-start;
+        }
+
+        .contact-button {
+            padding: $base-font-size;
+            font-size: $base-font-size;
+            border-radius: $base-border-radius;
+            border: none;
+            box-shadow: $base-box-shadow;
+
+            &:active {
+                box-shadow: none;
+            }
+        }
+
+    }
+
+
+}
