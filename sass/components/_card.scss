@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    background-color: rgba($secondary, 0.2);
+    box-shadow: $base-box-shadow;
+    padding: 1rem;
+    border-radius: $base-border-radius;
+
+    .card-title {
+        text-align: center;
+        font-size: $font-size-xl;
+    }
+
+    .card-img {
+        display: block;
+        background-color: #BADA55;
+        width: 100%;
+        height: 150px;
+    }
+
+    .card-desc {
+        font-size: $base-font-size;
+        margin: 1rem 0;
+    }
+}

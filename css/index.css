@@ -35,6 +35,30 @@
   color: #c3cd32;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  background-color: rgba(75, 0, 130, 0.2);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.card .card-title {
+  text-align: center;
+  font-size: 2rem;
+}
+.card .card-img {
+  display: block;
+  background-color: #BADA55;
+  width: 100%;
+  height: 150px;
+}
+.card .card-desc {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
 .about {
   height: 100vh;
   max-width: 100vw;
@@ -59,4 +83,26 @@
 .about .about-content .about-img > * {
   margin: 0;
   padding: 0;
+}
+
+.projects {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects-title {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.projects .projects-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.projects .projects-content .projects-project {
+  margin: 2rem 0;
 }
