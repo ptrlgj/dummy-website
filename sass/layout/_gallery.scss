@@ -1,0 +1,41 @@
+.gallery {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .gallery-title {
+        margin: 4rem 0;
+    }
+
+    .gallery-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .gallery-slider {
+
+            .gallery-image {
+                background-color: red;
+                width: 700px;
+                height: 500px;
+            }
+        }
+
+        .gallery-preview {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 3rem;
+
+            .gallery-minature {
+                width: 200px;
+                height: 150px;
+                background-color: blue;
+            }
+        }
+    }
+
+}

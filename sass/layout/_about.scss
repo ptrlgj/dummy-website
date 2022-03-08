@@ -11,17 +11,20 @@
     }
 
     .about-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
 
         .about-desc {
             font-size: $font-size-lg;
+            max-width: 500px;
             display: flex;
             align-items: center;
             margin: 2rem;
         }
 
         .about-img {
+            flex-basis: 1;
+
             &>* {
                 margin: 0;
                 padding: 0;
