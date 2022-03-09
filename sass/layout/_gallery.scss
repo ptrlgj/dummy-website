@@ -16,25 +16,62 @@
         justify-content: center;
 
         .gallery-slider {
+            background-color: red;
+            width: 700px;
+            height: 500px;
+            position: relative;
 
             .gallery-image {
-                background-color: red;
-                width: 700px;
-                height: 500px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .gallery-buttons {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+
+                &>* {
+                    background: none;
+                    border: none;
+                    font-size: $font-size-xxl;
+                    color: white;
+                    opacity: 0.7;
+                    height: 100%;
+                    width: 25%;
+                    cursor: pointer;
+                }
             }
         }
 
         .gallery-preview {
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 0 3rem;
-            height: 100%;
+            margin: 0px 3rem;
 
             .gallery-minature {
+                display: flex;
                 width: 200px;
                 height: 150px;
-                background-color: blue;
+                align-items: center;
+                cursor: pointer;
+
+                &>* {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .gallery-focus {
+                box-sizing: border-box;
+                outline: 2px $info solid;
+                box-shadow: $base-box-shadow;
             }
         }
     }
