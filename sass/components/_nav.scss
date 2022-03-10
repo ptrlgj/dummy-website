@@ -7,7 +7,6 @@
 
     @include breakpoint(915px) {
         justify-content: space-between;
-
     }
 
     &>* {
@@ -15,7 +14,11 @@
     }
 
     .nav-title {
-        font-size: $font-size-xxl;
+        font-size: $font-size-xl;
+
+        @include breakpoint(915px) {
+            font-size: $font-size-xxl;
+        }
     }
 
     .nav-links {
