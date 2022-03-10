@@ -33,7 +33,8 @@ body {
   padding: 0 3rem;
 }
 .nav .nav-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 0;
 }
 @media (min-width: 915px) {
   .nav .nav-title {

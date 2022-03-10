@@ -14,7 +14,8 @@
     }
 
     .nav-title {
-        font-size: $font-size-xl;
+        font-size: $font-size-lg;
+        margin: 0;
 
         @include breakpoint(915px) {
             font-size: $font-size-xxl;
