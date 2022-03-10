@@ -1,17 +1,12 @@
 .about {
     min-height: 100vh;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .about-title {
         font-size: $font-size-xxl;
-        margin: $font-size-xl auto
+        margin: $font-size-xl auto;
     }
 
     .about-content {
-        display: flex;
         flex-wrap: wrap;
 
         .about-desc {
@@ -19,13 +14,24 @@
             max-width: 500px;
             display: flex;
             align-items: center;
-            margin: 2rem;
+            padding: 2rem;
         }
 
         .about-img {
             flex-basis: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &>* {
+                width: 400px;
+                height: 400px;
+
+                @include breakpoint(1125px) {
+                    width: 580px;
+                    height: 580px;
+                }
+
                 margin: 0;
                 padding: 0;
             }

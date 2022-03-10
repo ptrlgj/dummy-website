@@ -2,8 +2,13 @@
     background: rgba($primary, 0.3);
     box-shadow: $base-box-shadow;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+
+    @include breakpoint(915px) {
+        justify-content: space-between;
+
+    }
 
     &>* {
         padding: 0 $font-size-xxl
@@ -16,6 +21,11 @@
     .nav-links {
         display: flex;
         justify-content: space-between;
+        display: none;
+
+        @include breakpoint(915px) {
+            display: block;
+        }
 
         .nav-link {
             text-decoration: none;

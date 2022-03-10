@@ -1,8 +1,9 @@
 @import 'base';
 @import 'variables';
-
+@import 'breakpoints';
 @import 'components/nav';
 @import 'components/card';
+@import 'components/grid';
 @import 'layout/about';
 @import 'layout/projects';
 @import 'layout/gallery';

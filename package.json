@@ -22,6 +22,7 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
+    "gulp-purgecss": "^4.1.3",
     "parcel": "^2.3.2"
   }
 }
