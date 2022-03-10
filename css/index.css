@@ -95,7 +95,7 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 460px) {
+@media (min-width: 360px) {
 
   .col-12-sm {
     box-sizing: border-box;
@@ -204,7 +204,7 @@ body {
 .gallery .gallery-content .gallery-slider {
   position: relative;
 }
-@media (min-width: 460px) {
+@media (min-width: 360px) {
   .gallery .gallery-content .gallery-slider {
     width: 460px;
   }
@@ -261,7 +261,7 @@ body {
   cursor: pointer;
   margin: 0 10px;
 }
-@media (min-width: 460px) {
+@media (min-width: 360px) {
   .gallery .gallery-content .gallery-preview .gallery-minature {
     width: 130px;
     height: 97.5px;
